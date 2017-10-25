@@ -60,5 +60,7 @@ RUN set -ex \
   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
 # 安装 rsync
 RUN apt-get update && apt-get -y install ssh rsync
+RUN apt-get -y install zip
+
 
 CMD [ "node" ]
